@@ -1,0 +1,120 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+
+@config 'tailwind.config.js';
+
+.fi-sidebar {
+    @apply bg-white dark:bg-gray-900 border-r dark:border-white/10 shadow-sm p-0 !important;
+}
+
+.fi-sidebar-header {
+    @apply bg-transparent ring-0 shadow-none !important;
+}
+
+.fi-sidebar-item-active a {
+    @apply bg-primary-600 dark:bg-primary-950/70 hover:bg-primary-600 dark:hover:bg-gray-950/70 text-white dark:text-white;
+}
+
+.fi-sidebar-item-active .fi-sidebar-item-label {
+    @apply text-white dark:text-white;
+}
+
+.fi-sidebar-item-active svg {
+    @apply text-white dark:text-white;
+}
+
+.fi-sidebar-item-active .fi-sidebar-item-grouped-border {
+    @apply [&>*:last-child]:bg-white;
+}
+
+.fi-sidebar-item:not(.fi-sidebar-item-active) a {
+    @apply dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800/50 dark:hover:text-white;
+}
+
+.fi-sidebar-item:not(.fi-sidebar-item-active):hover a svg {
+    @apply dark:text-white;
+}
+
+.fi-sidebar-nav::-webkit-scrollbar {
+    @apply h-2.5 w-2.5;
+}
+
+.fi-sidebar-nav::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+.fi-sidebar-nav::-webkit-scrollbar-thumb {
+    @apply bg-transparent;
+}
+
+.fi-sidebar-nav:hover::-webkit-scrollbar-thumb {
+    @apply rounded-full;
+}
+
+/* Light Theme */
+.fi-sidebar-nav:hover::-webkit-scrollbar-thumb {
+    @apply bg-primary-600/[.07];
+}
+
+.fi-sidebar-nav:hover::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-800/[.07];
+}
+
+/* Dark Theme */
+.dark .fi-sidebar-nav:hover::-webkit-scrollbar-thumb {
+    @apply bg-gray-800;
+}
+
+.dark .fi-sidebar-nav:hover::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-700;
+}
+
+.fi-modal-slide-over-window {
+    @apply mr-4 mt-6 rounded-xl overflow-hidden;
+}
+
+.fi-modal-slide-over-window .fi-modal-content {
+    @apply overflow-auto;
+}
+
+.fi-modal-slide-over-window .fi-modal-content::-webkit-scrollbar {
+    @apply h-2.5 w-2.5;
+}
+
+.fi-modal-slide-over-window .fi-modal-content::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+.fi-modal-slide-over-window .fi-modal-content::-webkit-scrollbar-thumb {
+    @apply bg-transparent;
+}
+
+.fi-modal-slide-over-window .fi-modal-content:hover::-webkit-scrollbar-thumb {
+    @apply rounded-full;
+}
+
+/* Light Theme */
+.fi-modal-slide-over-window .fi-modal-content:hover::-webkit-scrollbar-thumb {
+    @apply bg-primary-600;
+}
+
+.fi-modal-slide-over-window
+    .fi-modal-content:hover::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-800;
+}
+
+/* Dark Theme */
+.dark
+    .fi-modal-slide-over-window
+    .fi-modal-content:hover::-webkit-scrollbar-thumb {
+    @apply bg-gray-600;
+}
+
+.dark
+    .fi-modal-slide-over-window
+    .fi-modal-content:hover::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+}
+
+.fi-modal-close-overlay {
+    @apply backdrop-blur-sm;
+}
