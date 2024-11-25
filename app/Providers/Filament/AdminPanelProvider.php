@@ -41,9 +41,9 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
             ])
-            // ->middleware([
-            //     'universal',
-            // ])
+            ->middleware([
+                'universal',
+            ])
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
